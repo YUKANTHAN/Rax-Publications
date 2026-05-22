@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Editorial Board">
+    <main class="site-main">
+        <section style="background-color: var(--secondary-color); color: #fff; padding: 60px 20px; text-align: center;">
+            <h1 style="font-size: 48px; margin-bottom: 15px; color: #fff;">Editorial Board</h1>
+            <p style="font-size: 18px; color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto;">Meet our esteemed team of reviewers and editors.</p>
+        </section>
+
+        <section class="section-wrapper" style="max-width: 1000px; margin: 60px auto; padding: 0 20px;">
+            
+            <div style="margin-bottom: 40px; background: #fff; padding: 30px; border-radius: 8px; border-left: 5px solid var(--primary-color); box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                <h2 style="font-size: 24px; color: var(--heading-color); margin-bottom: 5px;">Editor-in-Chief</h2>
+                <h3 style="font-size: 20px; color: var(--primary-color); margin-bottom: 10px;">Dr. Alan Turing</h3>
+                <p style="color: #666; margin-bottom: 10px;"><strong>Affiliation:</strong> Department of Computer Science, University of Cambridge, UK</p>
+                <p>Expertise: Artificial Intelligence, Theoretical Computer Science, Cryptography</p>
+            </div>
+
+            <div style="margin-bottom: 40px; background: #fff; padding: 30px; border-radius: 8px; border-left: 5px solid var(--secondary-color); box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                <h2 style="font-size: 24px; color: var(--heading-color); margin-bottom: 5px;">Managing Editor</h2>
+                <h3 style="font-size: 20px; color: var(--primary-color); margin-bottom: 10px;">Prof. Grace Hopper</h3>
+                <p style="color: #666; margin-bottom: 10px;"><strong>Affiliation:</strong> Department of Software Engineering, Yale University, USA</p>
+                <p>Expertise: Programming Languages, Software Engineering, Compilers</p>
+            </div>
+
+            <h2 style="font-size: 28px; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 60px; margin-bottom: 30px;">Associate Editors</h2>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                <div style="background: #fff; padding: 20px; border-radius: 8px; border: 1px solid #eee;">
+                    <h3 style="font-size: 18px; color: var(--primary-color); margin-bottom: 5px;">Dr. Tim Berners-Lee</h3>
+                    <p style="color: #666; font-size: 14px; margin-bottom: 5px;"><strong>Affiliation:</strong> MIT, USA</p>
+                    <p style="font-size: 14px;">Expertise: Web Technologies, Semantic Web</p>
+                </div>
+                
+                <div style="background: #fff; padding: 20px; border-radius: 8px; border: 1px solid #eee;">
+                    <h3 style="font-size: 18px; color: var(--primary-color); margin-bottom: 5px;">Dr. Ada Lovelace</h3>
+                    <p style="color: #666; font-size: 14px; margin-bottom: 5px;"><strong>Affiliation:</strong> London Institute, UK</p>
+                    <p style="font-size: 14px;">Expertise: Algorithms, Computational Mathematics</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</Layout>

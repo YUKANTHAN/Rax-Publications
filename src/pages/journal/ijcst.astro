@@ -1,0 +1,76 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="IJCST Journal">
+    <main class="site-main">
+        <!-- Journal Hero (Matches WordPress Design) -->
+        <section style="background-color: var(--secondary-color); color: #fff; padding: 100px 20px; text-align: center; border-top: 5px solid var(--primary-color);">
+            <p style="color: var(--primary-color); font-weight: bold; letter-spacing: 2px; margin-bottom: 15px; text-transform: uppercase; font-size: 14px;">Official Publication Website</p>
+            <h1 style="font-size: 54px; margin-bottom: 25px; line-height: 1.2; font-weight: 800; max-width: 900px; margin-left: auto; margin-right: auto; font-family: 'Times New Roman', Times, serif;">
+                International Journal of Computational Science and Technology
+            </h1>
+            <p style="font-size: 20px; color: rgba(255,255,255,0.9); max-width: 800px; margin: 0 auto; font-weight: 300;">
+                A high-authority peer-reviewed open access journal for pioneering computational research and engineering technology.
+            </p>
+        </section>
+
+        <!-- Journal Content & Sidebar -->
+        <section class="journal-layout" style="display: grid; grid-template-columns: 300px 1fr; gap: 40px; max-width: 1200px; margin: 60px auto; padding: 0 20px;">
+            
+            <!-- Sidebar -->
+            <aside>
+                <div class="sidebar-nav">
+                    <a href="#" class="sidebar-link active">About the Journal</a>
+                    <a href="/editorial-board" class="sidebar-link">Editorial Board</a>
+                    <a href="/archives" class="sidebar-link">Current Issue</a>
+                    <a href="/archives" class="sidebar-link">All Archives</a>
+                    <a href="/contact" class="sidebar-link">Submit Manuscript</a>
+                    <a href="#" class="sidebar-link">Author Guidelines</a>
+                    <a href="#" class="sidebar-link">Publication Ethics</a>
+                </div>
+
+                <div style="margin-top: 30px; background: var(--bg-light); padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0;">
+                    <h3 style="font-size: 18px; margin-bottom: 10px; color: var(--secondary-color);">Journal Details</h3>
+                    <p style="font-size: 14px; margin-bottom: 5px;"><strong>E-ISSN:</strong> 2582-XXXX</p>
+                    <p style="font-size: 14px; margin-bottom: 5px;"><strong>Frequency:</strong> Bi-Monthly</p>
+                    <p style="font-size: 14px; margin-bottom: 5px;"><strong>Language:</strong> English</p>
+                    <p style="font-size: 14px; margin-bottom: 5px;"><strong>Publisher:</strong> Rax Publications</p>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="journal-content">
+                <div style="background: #fff; padding: 40px; border-radius: 8px; border: 1px solid #eee; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                    <h2 style="font-size: 32px; color: var(--heading-color); margin-bottom: 20px; border-bottom: 2px solid var(--primary-color); display: inline-block; padding-bottom: 5px;">Aims and Scope</h2>
+                    <p style="font-size: 16px; line-height: 1.8; color: #444; margin-bottom: 20px;">
+                        The <strong>International Journal of Computational Science and Technology (IJCST)</strong> aims to be a premier venue for researchers, academics, and industry professionals to share their latest findings in computational methods, algorithms, and applied technology.
+                    </p>
+                    <p style="font-size: 16px; line-height: 1.8; color: #444; margin-bottom: 30px;">
+                        Our scope covers a wide range of topics, including but not limited to:
+                    </p>
+                    <ul style="font-size: 16px; line-height: 1.8; color: #444; margin-bottom: 30px; padding-left: 20px;">
+                        <li>Advanced Algorithms and Data Structures</li>
+                        <li>High-Performance Computing and Cloud Architecture</li>
+                        <li>Artificial Intelligence and Machine Learning</li>
+                        <li>Cybersecurity and Cryptography</li>
+                        <li>Software Engineering Methodologies</li>
+                        <li>Computational Mathematics and Modeling</li>
+                    </ul>
+
+                    <h2 style="font-size: 24px; color: var(--heading-color); margin-bottom: 15px;">Peer Review Policy</h2>
+                    <p style="font-size: 16px; line-height: 1.8; color: #444; margin-bottom: 30px;">
+                        IJCST employs a strict double-blind peer-review process. All submitted manuscripts are evaluated by at least two independent expert reviewers to assess the originality, validity, and significance of the work.
+                    </p>
+
+                    <div style="background: var(--bg-light); padding: 20px; border-left: 4px solid var(--primary-color); border-radius: 4px;">
+                        <h3 style="font-size: 18px; margin-bottom: 10px;">Ready to Submit?</h3>
+                        <p style="font-size: 14px; margin-bottom: 15px; color: #666;">Please ensure your manuscript follows our formatting guidelines before submission.</p>
+                        <a href="/contact" class="btn btn-primary" style="padding: 10px 20px; font-size: 14px;">Submit to IJCST</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</Layout>

@@ -1,0 +1,96 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Home">
+    <main id="primary" class="site-main">
+        
+        <!-- Hero Section -->
+        <section class="hero-section" style="padding: 140px 20px; background: linear-gradient(rgba(15, 23, 43, 0.85), rgba(15, 23, 43, 0.85)), url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center; text-align: center; color: #fff;">
+            <div class="hero-content" style="max-width: 900px; margin: 0 auto;">
+                <h1 style="font-size: 60px; line-height: 1.1; margin-bottom: 25px; letter-spacing: -1px;">Advancing Global Knowledge and <span style="color: var(--primary-color);">Engineering Excellence</span></h1>
+                <p style="font-size: 20px; color: rgba(255,255,255,0.9); margin-bottom: 45px; font-weight: 300;">Welcome to Raxpublications, a premier digital publishing platform connecting researchers, scholars, and industry leaders through high-impact research.</p>
+                <div class="hero-actions">
+                    <a href="/contact" class="btn btn-primary" style="padding: 16px 40px; font-size: 16px;">Submit Manuscript</a>
+                    <a href="/journals" class="btn" style="padding: 16px 40px; font-size: 16px; background: transparent; border: 2px solid #fff; color: #fff; margin-left: 15px;">Explore Journals</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section-wrapper" style="max-width: 1200px; margin: 80px auto; padding: 0 20px;">
+            <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: center;">
+                <div class="about-image">
+                    <img src="/about-image.png" alt="Academic Research" style="width: 100%; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                </div>
+                <div class="about-content">
+                    <h2 style="font-size: 36px; margin-bottom: 25px;">Welcome to RaxPublications</h2>
+                    <p style="margin-bottom: 20px;">RaxPublications is a global platform dedicated to the dissemination of revolutionary research and technical news. Our mission is to provide an accessible and high-authority environment for researchers across Science, Engineering, and the Humanities.</p>
+                    <p style="margin-bottom: 30px;">We maintain a rigorous peer-review process to ensure that all published manuscripts meet the highest standards of academic integrity and innovation. Whether you are a student, a career researcher, or a technical professional, RaxPublications offers the resources you need to stay at the forefront of your field.</p>
+                    <a href="/about" class="btn btn-primary">Read More About Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Research Articles Grid -->
+        <section class="section-wrapper" style="background-color: var(--bg-light); padding: 100px 20px; max-width: 100%; margin: 0;">
+            <div style="max-width: 1200px; margin: 0 auto;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 50px;">
+                    <h2 style="margin: 0; font-size: 32px; font-weight: 800;">Latest Research <span style="color: var(--primary-color);">Articles</span></h2>
+                    <a href="/archives" style="color: var(--primary-color); font-weight: 700; text-decoration: none; border-bottom: 2px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='var(--primary-color)'" onmouseout="this.style.borderBottomColor='transparent'">View All Research &rarr;</a>
+                </div>
+                <div class="grid-container">
+                    
+                    <article class="card">
+                        <span style="color: var(--primary-color); font-weight: bold; font-size: 14px; text-transform: uppercase;">Research Paper</span>
+                        <h3 style="margin-top: 10px;"><a href="/article/1">AI in Medical Diagnosis</a></h3>
+                        <p style="font-size: 14px; color: #666;">May 20, 2026 | By Dr. Alan Turing</p>
+                        <p>An in-depth analysis of how artificial intelligence is revolutionizing early detection of anomalies...</p>
+                        <a href="/article/1" style="color: var(--primary-color); font-weight: 600;">Full Access &rarr;</a>
+                    </article>
+
+                    <article class="card">
+                        <span style="color: var(--primary-color); font-weight: bold; font-size: 14px; text-transform: uppercase;">Research Paper</span>
+                        <h3 style="margin-top: 10px;"><a href="/article/2">Quantum Computing Scalability</a></h3>
+                        <p style="font-size: 14px; color: #666;">May 15, 2026 | By Sarah Connor</p>
+                        <p>Exploring the physical limitations and breakthroughs in scaling quantum hardware beyond 1000 qubits...</p>
+                        <a href="/article/2" style="color: var(--primary-color); font-weight: 600;">Full Access &rarr;</a>
+                    </article>
+
+                    <article class="card">
+                        <span style="color: var(--primary-color); font-weight: bold; font-size: 14px; text-transform: uppercase;">Review Article</span>
+                        <h3 style="margin-top: 10px;"><a href="/article/3">Sustainable Urban Planning</a></h3>
+                        <p style="font-size: 14px; color: #666;">May 10, 2026 | By John Doe</p>
+                        <p>A comprehensive review of modern eco-friendly city planning methodologies and their implementations...</p>
+                        <a href="/article/3" style="color: var(--primary-color); font-weight: 600;">Full Access &rarr;</a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Indexed In Section -->
+        <section class="indexed-in" style="background: #fff; padding: 100px 20px; text-align: center;">
+            <div style="max-width: 1200px; margin: 0 auto;">
+                <h2 style="font-weight: 800; font-size: 32px; margin-bottom: 10px;">Abstracted and <span style="color: var(--primary-color);">Indexed In</span></h2>
+                <p style="color: #666; font-size: 18px; margin-bottom: 60px;">Ensuring maximum visibility and academic impact for your published research.</p>
+                
+                <div class="indexed-logos" style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+                    <div class="logo-item" style="padding: 20px; filter: grayscale(100%); opacity: 0.6; transition: 0.3s; cursor: pointer;" onmouseover="this.style.filter='none'; this.style.opacity='1';" onmouseout="this.style.filter='grayscale(100%)'; this.style.opacity='0.6';">
+                        <div class="logo-placeholder" style="font-size: 20px; font-weight: 800; font-family: var(--font-heading);">GOOGLE SCHOLAR</div>
+                    </div>
+                    <div class="logo-item" style="padding: 20px; filter: grayscale(100%); opacity: 0.6; transition: 0.3s; cursor: pointer;" onmouseover="this.style.filter='none'; this.style.opacity='1';" onmouseout="this.style.filter='grayscale(100%)'; this.style.opacity='0.6';">
+                        <div class="logo-placeholder" style="font-size: 20px; font-weight: 800; font-family: var(--font-heading);">DOAJ</div>
+                    </div>
+                    <div class="logo-item" style="padding: 20px; filter: grayscale(100%); opacity: 0.6; transition: 0.3s; cursor: pointer;" onmouseover="this.style.filter='none'; this.style.opacity='1';" onmouseout="this.style.filter='grayscale(100%)'; this.style.opacity='0.6';">
+                        <div class="logo-placeholder" style="font-size: 20px; font-weight: 800; font-family: var(--font-heading);">CROSSREF</div>
+                    </div>
+                    <div class="logo-item" style="padding: 20px; filter: grayscale(100%); opacity: 0.6; transition: 0.3s; cursor: pointer;" onmouseover="this.style.filter='none'; this.style.opacity='1';" onmouseout="this.style.filter='grayscale(100%)'; this.style.opacity='0.6';">
+                        <div class="logo-placeholder" style="font-size: 20px; font-weight: 800; font-family: var(--font-heading);">INDEX COPERNICUS</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</Layout>

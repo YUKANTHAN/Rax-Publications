@@ -1,0 +1,70 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Archives">
+    <main class="site-main">
+        <section style="background-color: var(--secondary-color); color: #fff; padding: 60px 20px; text-align: center;">
+            <h1 style="font-size: 48px; margin-bottom: 15px; color: #fff;">Archives</h1>
+            <p style="font-size: 18px; color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto;">Browse through our past issues and published research.</p>
+        </section>
+
+        <section class="section-wrapper" style="max-width: 1200px; margin: 60px auto; padding: 0 20px;">
+            <div style="background: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); overflow: hidden; border: 1px solid #eee;">
+                
+                <!-- Issue Header -->
+                <div style="background-color: var(--bg-light); padding: 20px 30px; border-bottom: 1px solid #eee;">
+                    <h2 style="font-size: 24px; color: var(--heading-color); margin: 0;">Volume 4, Issue 1 (2025)</h2>
+                    <p style="color: #666; margin: 5px 0 0 0;">Published: Jan 15, 2025 | International Journal of Computational Science and Technology</p>
+                </div>
+
+                <!-- Table -->
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+                        <thead>
+                            <tr style="background-color: var(--secondary-color); color: #fff;">
+                                <th style="padding: 15px 20px; font-weight: 600; width: 5%;">No.</th>
+                                <th style="padding: 15px 20px; font-weight: 600; width: 60%;">Article Title & Authors</th>
+                                <th style="padding: 15px 20px; font-weight: 600; width: 20%;">Pages</th>
+                                <th style="padding: 15px 20px; font-weight: 600; width: 15%; text-align: center;">Download</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Row 1 -->
+                            <tr style="border-bottom: 1px solid #eee; transition: background-color 0.2s;" onmouseover="this.style.backgroundColor='#F8FAFC'" onmouseout="this.style.backgroundColor='transparent'">
+                                <td style="padding: 20px;">1</td>
+                                <td style="padding: 20px;">
+                                    <a href="/article/1" style="color: var(--primary-color); font-weight: 600; text-decoration: none; font-size: 16px;">AI in Medical Diagnosis: A Comprehensive Review</a><br>
+                                    <span style="color: #666; font-size: 14px;">Dr. Alan Turing, Sarah Connor</span>
+                                </td>
+                                <td style="padding: 20px; color: #666;">1 - 15</td>
+                                <td style="padding: 20px; text-align: center;">
+                                    <a href="#" style="display: inline-flex; align-items: center; justify-content: center; background-color: #EE4266; color: #fff; padding: 8px 15px; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 12px; transition: 0.2s;" onmouseover="this.style.backgroundColor='#d43555'" onmouseout="this.style.backgroundColor='#EE4266'">
+                                        PDF 📥
+                                    </a>
+                                </td>
+                            </tr>
+                            
+                            <!-- Row 2 -->
+                            <tr style="border-bottom: 1px solid #eee; transition: background-color 0.2s;" onmouseover="this.style.backgroundColor='#F8FAFC'" onmouseout="this.style.backgroundColor='transparent'">
+                                <td style="padding: 20px;">2</td>
+                                <td style="padding: 20px;">
+                                    <a href="/article/2" style="color: var(--primary-color); font-weight: 600; text-decoration: none; font-size: 16px;">Quantum Computing Scalability Limits</a><br>
+                                    <span style="color: #666; font-size: 14px;">Dr. Ada Lovelace</span>
+                                </td>
+                                <td style="padding: 20px; color: #666;">16 - 28</td>
+                                <td style="padding: 20px; text-align: center;">
+                                    <a href="#" style="display: inline-flex; align-items: center; justify-content: center; background-color: #EE4266; color: #fff; padding: 8px 15px; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 12px; transition: 0.2s;" onmouseover="this.style.backgroundColor='#d43555'" onmouseout="this.style.backgroundColor='#EE4266'">
+                                        PDF 📥
+                                    </a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+</Layout>

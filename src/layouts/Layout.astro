@@ -1,0 +1,88 @@
+---
+import '../styles/global.css';
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+		<title>{title} | Rax Publications</title>
+	</head>
+	<body>
+        <!-- Top Bar -->
+        <div class="top-notification-bar">
+            Call for Papers: Volume 5, Issue 2 - Submit your manuscript today! 
+            <a href="/contact" style="color: #fff; text-decoration: underline; margin-left: 10px;">Submit Online</a>
+        </div>
+
+        <!-- Main Header -->
+        <header class="site-header">
+            <div class="header-container">
+                <div class="site-logo">
+                    <a href="/" style="display: flex; align-items: center; gap: 10px;">
+                        <img src="/logo.png" alt="Rax Publications Logo" style="height: 40px; width: auto;" />
+                        Rax<span>Publications</span>
+                    </a>
+                </div>
+                
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/journals">Journals</a></li>
+                        <li><a href="/archives">Archives</a></li>
+                        <li><a href="/editorial-board">Editorial Board</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content Slot -->
+		<slot />
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>RaxPublications</h3>
+                    <p>RaxPublications is a global academic publishing house dedicated to empowering researchers and professionals through the dissemination of high-quality scientific and technical knowledge.</p>
+                    <div style="margin-top: 20px;">
+                        <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <nav>
+                        <a href="/about">About Us</a>
+                        <a href="/journals">Our Journals</a>
+                        <a href="/archives">Recent Archives</a>
+                        <a href="/editorial-board">Editorial Board</a>
+                        <a href="/contact">Submit Manuscript</a>
+                    </nav>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><strong>Address:</strong> 42 Tenkasi Road, Rajapalayam, Tamil Nadu 626117, India</p>
+                    <p><strong>Email:</strong> support@raxpublications.com</p>
+                    <p><strong>Phone:</strong> +91 1234567890</p>
+                    <div style="margin-top: 20px;">
+                        <span style="font-size: 24px;">🔗 🐦 📘</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; {new Date().getFullYear()} RaxPublications - Academic Research Journal & Technical News Portal. All rights reserved.</p>
+            </div>
+        </footer>
+	</body>
+</html>
