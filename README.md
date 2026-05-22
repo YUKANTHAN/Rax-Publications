@@ -1,46 +1,44 @@
-# Astro Starter Kit: Basics
+# Rax Publications – Astro Static Site
 
-```sh
-npm create astro@latest -- --template basics
+This repository contains the **static site** for **Rax Publications**, an academic publishing platform migrated from WordPress to Astro.
+
+## ✨ Features
+- Modern, high‑performance static site generated with Astro
+- Premium "Kitspress" inspired design (cyan & navy palette, professional typography)
+- Pages: Home, About, Journals, Editorial Board, Archives, Contact, and individual journal pages
+- Responsive layout, dark footer, and integrated logo
+- Easy to deploy on free static hosts (Netlify, Vercel, GitHub Pages)
+
+## 🛠️ Getting Started
+```bash
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev   # http://localhost:4321
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 📦 Build for Production
+```bash
+npm run build   # outputs to ./dist
+npm run preview # preview the built site locally
+```
 
-## 🚀 Project Structure
+## 🚀 Deploy
+Push the repository to GitHub and connect it to a static hosting service (Netlify/Vercel). The site will be automatically built and deployed.
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
+## 📂 Project Structure
+```
 /
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+├─ public/            # static assets (logo, favicons)
+├─ src/
+│   ├─ layouts/      # Layout.astro (header/footer)
+│   ├─ pages/        # Astro pages (index, about, contact, …)
+│   └─ styles/       # global.css
+├─ astro.config.mjs   # Astro configuration
+├─ package.json       # dependencies & scripts
+└─ README.md          # this file
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 📧 Contact
+For any questions, reach out at **support@raxpublications.com**.
