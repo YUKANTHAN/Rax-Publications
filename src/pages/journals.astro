@@ -2,31 +2,16 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Our Journals">
-    <main class="site-main">
-        <section style="background-color: var(--secondary-color); color: #fff; padding: 60px 20px; text-align: center;">
-            <h1 style="font-size: 48px; margin-bottom: 15px; color: #fff;">Our Journals</h1>
-            <p style="font-size: 18px; color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto;">Explore our collection of high-authority, peer-reviewed academic journals.</p>
-        </section>
-
-        <section class="section-wrapper" style="max-width: 1200px; margin: 60px auto; padding: 0 20px;">
-            <div class="grid-container">
-                <!-- Journal 1 -->
-                <article class="card" style="border-top: 4px solid var(--primary-color);">
-                    <h2 style="font-size: 24px; margin-bottom: 10px;"><a href="/journal/ijcst" style="color: var(--heading-color); text-decoration: none;">International Journal of Computational Science and Technology (IJCST)</a></h2>
-                    <p style="font-size: 14px; font-weight: bold; color: #666; margin-bottom: 15px;">E-ISSN: 2582-XXXX | Bi-Monthly</p>
-                    <p style="margin-bottom: 20px;">Focuses on the latest advancements in computational research, algorithms, and engineering technology.</p>
-                    <a href="/journal/ijcst" class="btn btn-primary" style="padding: 10px 20px; font-size: 14px;">View Journal</a>
-                </article>
-
-                <!-- Journal 2 -->
-                <article class="card" style="border-top: 4px solid var(--primary-color);">
-                    <h2 style="font-size: 24px; margin-bottom: 10px;"><a href="/journal/ijdsai" style="color: var(--heading-color); text-decoration: none;">International Journal of Data Science and AI (IJDSAI)</a></h2>
-                    <p style="font-size: 14px; font-weight: bold; color: #666; margin-bottom: 15px;">E-ISSN: 2583-XXXX | Quarterly</p>
-                    <p style="margin-bottom: 20px;">Dedicated to original research in machine learning, big data analytics, and artificial intelligence applications.</p>
-                    <a href="/journal/ijdsai" class="btn btn-primary" style="padding: 10px 20px; font-size: 14px;">View Journal</a>
-                </article>
-            </div>
-        </section>
-    </main>
+<Layout title="International Journal of Computational Science and Technology (IJCST)">
+  <main class="site-main" style="padding: 40px 20px; text-align: center;">
+    <h1 style="font-size: 48px; margin-bottom: 20px;">International Journal of Computational Science and Technology (IJCST)</h1>
+    <p style="font-size: 18px; margin-bottom: 30px; color: #555;">
+      E‑ISSN :                              | Quarterly — March, June, September, and December.
+    </p>
+    <img src="/IJCST.png" alt="IJCST Journal Cover" style="max-width: 300px; height: auto; border-radius: 8px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); margin-bottom: 30px;" />
+    <p style="font-size: 16px; max-width: 800px; margin: 0 auto; color: #333;">
+      Focuses on the latest advancements in computational research, algorithms, and engineering technology.
+    </p>
+    <a href="/journal/ijcst" class="btn btn-primary" style="margin-top: 20px; padding: 12px 24px; font-size: 16px;">View Journal</a>
+  </main>
 </Layout>
